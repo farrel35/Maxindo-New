@@ -29,6 +29,10 @@
     padding: 10px 155px;
     margin: 10px 0;
   }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
+  }
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
@@ -67,6 +71,10 @@
   .Feautes .single-features h3 {
     padding-top: 105px;
     font-size: 20px;
+  }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
   }
 }
 /* Mobile Screen */
@@ -112,5 +120,9 @@
   .Feautes .single-features h3 {
     padding-top: 105px;
     font-size: 20px;
+  }
+  .why-choose .choose-right {
+    height: 350px;
+    margin-top: 30px;
   }
 }
