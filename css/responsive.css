@@ -1,0 +1,32 @@
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .header .top-contact li a {
+    font-size: 13px;
+  }
+  .header .top-contact li {
+    display: inline-block;
+    margin-right: 25px;
+    color: #2c2d3f;
+    font-size: 13px;
+  }
+}
+/* Mobile Screen */
+@media only screen and (max-width: 767px) {
+  .header .top-contact {
+    float: none;
+    text-align: center;
+  }
+}
+/* Mobile Screen */
+@media only screen and (max-width: 450px) {
+  .header .top-contact {
+    float: none;
+    text-align: center;
+  }
+  .header .top-contact li {
+    display: inline-block;
+    margin-right: 10px;
+    color: #2c2d3f;
+    font-size: 13px;
+  }
+}

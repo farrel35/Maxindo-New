@@ -1,0 +1,74 @@
+/*=============================
+	Global CSS 
+===============================*/
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #888;
+}
+img {
+  max-width: 100%;
+}
+.logo {
+  width: 200px;
+}
+/* Topbar */
+.header .topbar {
+  /* background-color: #fff; */
+  border-bottom: 1px solid #eee;
+}
+.header .topbar {
+  padding: 5px 0;
+}
+.header .top-contact {
+  float: right;
+  margin-top: 1rem;
+}
+.header .top-contact li {
+  display: inline-block;
+  margin-right: 25px;
+  color: #2c2d3f;
+}
+.header .top-contact li:last-child {
+  margin-right: 0;
+}
+.header .top-contact li a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+.header .top-contact li a:hover {
+  color: #ed2025;
+}
+.header .top-contact li i {
+  color: #ed2025;
+  margin-right: 8px;
+}
+
+.header.sticky .header-inner {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  bottom: initial;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  animation: fadeInDown 0.5s both 0.1s;
+  box-shadow: 0px 0px 13px #00000054;
+  -webkit-animation: fadeInDown 0.5s both 0.1s;
+}
+
+.offcanvas-backdrop {
+  position: static; /* Overrides the Bootstrap position property */
+}
+
+.carousel-item img {
+  top: 10px;
+  max-height: 600px;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
