@@ -79,30 +79,113 @@ img {
 .dropdown-menu {
   display: none;
 }
+/*  hover pada nav-link */
+.navbar-nav .nav-link {
+  position: relative;
+  color: #333;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 4px;
+}
+
+.navbar-nav .nav-link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ed2025;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ed2025;
+  text-decoration: none;
+  border-radius: 4px;
+}
+/* Gaya untuk tombol outline kustom */
+.btn-custom-outline {
+  display: inline-block;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #ed2025;
+  background-color: transparent;
+  border: 2px solid #ed2025;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* Efek hover untuk tombol outline */
+.btn-custom-outline:hover {
+  color: #fff;
+  background-color: #ed2025;
+  border-color: #ed2025;
+  transform: translateY(-2px);
+}
+
+/* Efek fokus untuk aksesibilitas */
+.btn-custom-outline:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(237, 32, 37, 0.5);
+}
+
 /*=============================
 	Start Marquee CSS
 ===============================*/
+/* Gaya untuk section media partner */
+.media-partner {
+  background-color: #fefefe; /* Latar belakang section */
+  padding: 40px 0; /* Padding atas dan bawah */
+  text-align: center; /* Menyelaraskan teks ke tengah */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk section */
+}
+
+.media-partner h2 {
+  font-size: 24px; /* Ukuran font judul */
+  font-weight: 700; /* Berat font judul */
+  color: #333; /* Warna teks judul */
+  margin-bottom: 20px; /* Jarak bawah judul */
+}
+
 .marquee {
   width: 100%;
   overflow: hidden;
-  background-color: #f8f9fa;
+  background-color: #fefefe;
   padding: 20px 0;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
 }
+
 .marquee-content {
   display: flex;
   animation: marquee 30s linear infinite;
   white-space: nowrap;
 }
+
 .marquee-content img {
   height: 80px;
   margin: 0 40px;
   transition: transform 0.3s;
 }
+
 .marquee-content img:hover {
   transform: scale(1.1);
 }
+
 @keyframes marquee {
   0% {
     transform: translateX(100%);
@@ -111,6 +194,7 @@ img {
     transform: translateX(-100%);
   }
 }
+
 /*=============================
 	Start Feautes CSS
 ===============================*/
@@ -197,7 +281,7 @@ img {
   margin-top: 15px;
 }
 /*===================
-	Why counter CSS
+	counter CSS
 =====================*/
 .counter-section {
   background-color: #d32f2f;
@@ -330,6 +414,11 @@ img {
 .why-choose .video-image .waves-block .wave-3 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+}
+.why-teks {
+  text-align: justify;
+  text-indent: 30px;
+  line-height: 1.6;
 }
 /*=======================
 	End Why choose CSS
