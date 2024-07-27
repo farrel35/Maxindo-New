@@ -20,5 +20,8 @@
         $(".header").removeClass("sticky");
       }
     });
+    $(".video-popup").magnificPopup({
+      type: "video",
+    });
   });
 })(jQuery);
