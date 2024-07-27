@@ -63,6 +63,7 @@ img {
 
 .offcanvas-backdrop {
   position: static; /* Overrides the Bootstrap position property */
+  background-color: transparent;
 }
 
 .carousel-item img {
