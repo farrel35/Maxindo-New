@@ -90,23 +90,6 @@
   font-size: 1rem;
 }
 
-/* Button Custom Styles */
-.btn-custom-outline {
-  color: #ed2025;
-  border: 2px solid #ed2025;
-  background: transparent;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-custom-outline:hover {
-  background-color: #ed2025;
-  color: white;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Animations */
 @keyframes fadeInDown {
   from {
@@ -136,7 +119,8 @@
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-section .accordion-header button:not(.collapsed)::after {
