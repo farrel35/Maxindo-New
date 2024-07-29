@@ -199,3 +199,66 @@
     transform: translate(-50%, 0);
   }
 }
+/* Vision & Mission Section */
+.vision-mission {
+  padding: 60px 0;
+  background: #f9f9f9;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #ff5a5f;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.vision,
+.mission {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.vision h3,
+.mission h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.vision p,
+.mission ul {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.mission ul {
+  list-style: none;
+  padding: 0;
+}
+
+.mission ul li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.mission ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  color: #ff5a5f;
+}
