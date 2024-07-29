@@ -217,7 +217,7 @@
   position: absolute;
   width: 50px;
   height: 3px;
-  background: #ff5a5f;
+  background: #ed2025;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
@@ -260,7 +260,7 @@
   font-weight: 900;
   position: absolute;
   left: 0;
-  color: #ff5a5f;
+  color: #ed2025;
 }
 .timeline-section {
   padding: 60px 0;
@@ -276,7 +276,7 @@
   content: "";
   position: absolute;
   width: 4px;
-  background-color: #ff5722;
+  background-color: #ed2025;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -304,7 +304,7 @@
   width: 20px;
   height: 20px;
   right: -10px;
-  background-color: #ff5722;
+  background-color: #ed2025;
   border: 4px solid #ffffff;
   top: 30px;
   border-radius: 50%;
@@ -318,7 +318,7 @@
 .timeline-date {
   font-size: 18px;
   font-weight: 600;
-  color: #ff5722;
+  color: #ed2025;
   margin-bottom: 10px;
 }
 
@@ -353,7 +353,6 @@
   }
 
   .timeline-item::after {
-    left: 15px;
-    right: auto;
+    left: -10px;
   }
 }
