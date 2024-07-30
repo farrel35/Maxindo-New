@@ -541,7 +541,7 @@ h2 {
 }
 
 .service-content ul li {
-  font-size: 16px;
+  font-size: 17px;
   color: #f0f0f0;
   margin-bottom: 5px;
   position: relative;
@@ -549,12 +549,11 @@ h2 {
 }
 
 .service-content ul li::before {
-  content: "•";
+  content: "\f0a9";
+  font-family: FontAwesome;
   color: #ffd700;
   position: absolute;
   left: 0;
-  font-size: 18px;
-  line-height: 1;
 }
 
 @media (max-width: 768px) {
