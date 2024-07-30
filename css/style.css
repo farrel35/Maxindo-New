@@ -158,7 +158,7 @@ img {
 /* Gaya untuk section media partner */
 .media-partner {
   background-color: #fefefe; /* Latar belakang section */
-  padding: 40px 0; /* Padding atas dan bawah */
+  padding: 20px 0; /* Padding atas dan bawah */
   text-align: center; /* Menyelaraskan teks ke tengah */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk section */
 }
@@ -282,6 +282,16 @@ marquee {
   margin-bottom: 24px;
   position: relative;
   color: #2c2d3f;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #ed2025;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .section-title p {
   font-size: 15px;
@@ -547,4 +557,3 @@ h2 {
     max-width: 100%;
   }
 }
-s

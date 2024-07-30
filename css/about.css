@@ -4,24 +4,6 @@
   background: #f9f9f9;
 }
 
-.section-title h2 {
-  font-size: 36px;
-  margin-bottom: 20px;
-  position: relative;
-  display: inline-block;
-}
-
-.section-title h2::after {
-  content: "";
-  position: absolute;
-  width: 50px;
-  height: 3px;
-  background: #ed2025;
-  bottom: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
 .vision,
 .mission {
   background: #fff;
