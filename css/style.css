@@ -288,10 +288,14 @@ marquee {
   position: absolute;
   width: 50px;
   height: 3px;
-  background: #ed2025;
+  background: #000000;
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
 }
 .section-title p {
   font-size: 15px;

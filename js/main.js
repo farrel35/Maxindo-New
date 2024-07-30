@@ -23,6 +23,9 @@
     $(".video-popup").magnificPopup({
       type: "video",
     });
+    $(document).ready(function () {
+      $(".image-link").magnificPopup({ type: "image" });
+    });
   });
 })(jQuery);
 
