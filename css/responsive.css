@@ -37,6 +37,9 @@
   .mission {
     margin-bottom: 30px;
   }
+  .btn-custom-outline {
+    margin-top: 15px;
+  }
 }
 /* Mobile Screen */
 @media only screen and (max-width: 767px) {
@@ -83,6 +86,9 @@
   .vision,
   .mission {
     margin-bottom: 30px;
+  }
+  .btn-custom-outline {
+    margin-top: 15px;
   }
 }
 /* Mobile Screen */
@@ -136,5 +142,8 @@
   .vision,
   .mission {
     margin-bottom: 30px;
+  }
+  .btn-custom-outline {
+    margin-top: 15px;
   }
 }
