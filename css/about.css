@@ -69,7 +69,7 @@
 .vision h3,
 .mission h3 {
   font-size: 28px;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   color: #ed2025;
   position: relative;
   display: inline-block;
@@ -167,74 +167,6 @@
   height: 5px;
   background: linear-gradient(to right, #ed2025, #ff6600, #ed2025);
   animation: animated-border 5s linear infinite;
-}
-
-@keyframes animated-border {
-  0% {
-    background-position: 0 50%;
-  }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-
-.vision h3,
-.mission h3 {
-  font-size: 24px;
-  margin-bottom: 15px;
-  color: #333;
-  position: relative;
-  display: inline-block;
-}
-
-.vision h3::after,
-.mission h3::after {
-  content: "";
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  background: #ed2025;
-  left: 0;
-  bottom: -10px;
-  border-radius: 2px;
-}
-
-.vision p,
-.mission ul {
-  font-size: 16px;
-  color: #555;
-  line-height: 1.8;
-}
-
-.mission ul {
-  padding: 0;
-  list-style: none;
-}
-
-.mission ul li {
-  position: relative;
-  padding-left: 30px;
-  margin-bottom: 15px;
-  color: #666;
-  transition: all 0.3s ease;
-}
-
-.mission ul li::before {
-  content: "\f00c";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  position: absolute;
-  left: 0;
-  top: 50%;
-  transform: translateY(-50%);
-  color: #ed2025;
-  font-size: 18px;
-}
-
-.mission ul li:hover {
-  color: #ed2025;
-  padding-left: 40px;
-  font-weight: bold;
 }
 
 @media (max-width: 992px) {
