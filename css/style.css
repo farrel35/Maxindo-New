@@ -470,3 +470,85 @@ marquee {
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   }
 }
+.services-section {
+  text-align: center;
+  padding: 50px 0;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  color: #ed2025;
+}
+
+p {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.service-box {
+  background: linear-gradient(45deg, #ed2025, rgb(104, 25, 24));
+  border-radius: 25px;
+  padding: 30px;
+  color: #fff;
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.service-box:hover {
+  transform: scale(1.05);
+}
+
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.service-content {
+  text-align: left;
+}
+
+.service-content h3 {
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.service-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.service-content ul li {
+  font-size: 14px;
+  color: #f0f0f0;
+  margin-bottom: 5px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.service-content ul li::before {
+  content: "•";
+  color: #ffd700;
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .service-box {
+    max-width: 100%;
+  }
+}
+s
