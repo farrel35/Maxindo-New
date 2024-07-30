@@ -556,6 +556,10 @@ h2 {
   left: 0;
 }
 
+.service-content ul li span {
+  margin-left: 5px; /* Adjust this value to suit your design */
+}
+
 @media (max-width: 768px) {
   .service-box {
     max-width: 100%;
