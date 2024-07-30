@@ -1,27 +1,97 @@
 /* Vision & Mission Section */
 .vision-mission {
   padding: 60px 0;
-  background: #f9f9f9;
+  background: linear-gradient(135deg, #f4f4f4 25%, #ffffff 100%);
+  background-size: cover;
+}
+
+.section-title h2 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  background: #ed2025;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  border-radius: 2px;
 }
 
 .vision,
 .mission {
   background: #fff;
   padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.vision:hover,
+.mission:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  background: #fdfdfd;
+}
+
+.vision::before,
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, #ed2025, #ffa500, #ed2025);
+  animation: animateBorder 5s linear infinite;
+}
+
+@keyframes animateBorder {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 .vision h3,
 .mission h3 {
   font-size: 28px;
   margin-bottom: 20px;
+  color: #ed2025;
+  position: relative;
+  display: inline-block;
+}
+
+.vision h3::after,
+.mission h3::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background: #ed2025;
+  left: 0;
+  bottom: -10px;
+  border-radius: 2px;
 }
 
 .vision p,
 .mission ul {
   font-size: 16px;
   line-height: 1.8;
+  color: #666;
 }
 
 .mission ul {
@@ -31,8 +101,10 @@
 
 .mission ul li {
   position: relative;
-  padding-left: 20px;
+  padding-left: 30px;
   margin-bottom: 10px;
+  transition: color 0.3s ease, padding-left 0.3s ease;
+  text-align: justify;
 }
 
 .mission ul li::before {
@@ -41,7 +113,143 @@
   font-weight: 900;
   position: absolute;
   left: 0;
+  top: 50%;
+  transform: translateY(-50%);
   color: #ed2025;
+  font-size: 18px;
+}
+
+.mission ul li:hover {
+  color: #ed2025;
+  padding-left: 40px;
+}
+
+@media (max-width: 768px) {
+  .vision,
+  .mission {
+    margin-bottom: 20px;
+  }
+}
+
+/* Additional Styles */
+.section-title {
+  margin-bottom: 50px;
+}
+
+.section-title h2 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.vision,
+.mission {
+  position: relative;
+  padding: 40px 30px;
+  border-radius: 15px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.vision:hover,
+.mission:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.2);
+}
+
+.vision::before,
+.mission::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(to right, #ed2025, #ff6600, #ed2025);
+  animation: animated-border 5s linear infinite;
+}
+
+@keyframes animated-border {
+  0% {
+    background-position: 0 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+.vision h3,
+.mission h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+  position: relative;
+  display: inline-block;
+}
+
+.vision h3::after,
+.mission h3::after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background: #ed2025;
+  left: 0;
+  bottom: -10px;
+  border-radius: 2px;
+}
+
+.vision p,
+.mission ul {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.mission ul {
+  padding: 0;
+  list-style: none;
+}
+
+.mission ul li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: #666;
+  transition: all 0.3s ease;
+}
+
+.mission ul li::before {
+  content: "\f00c";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ed2025;
+  font-size: 18px;
+}
+
+.mission ul li:hover {
+  color: #ed2025;
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+@media (max-width: 992px) {
+  .vision,
+  .mission {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .vision,
+  .mission {
+    margin-bottom: 20px;
+    padding: 20px;
+  }
 }
 
 .timeline-section {
