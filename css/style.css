@@ -366,7 +366,7 @@ marquee {
 }
 /* Start Faq CSS */
 .why-choose {
-  background: #fff;
+  background: #f4f4f4;
 }
 .why-choose .choose-right {
   height: 100%;
@@ -489,12 +489,6 @@ h2 {
 
 .highlight {
   color: #ed2025;
-}
-
-p {
-  color: #666;
-  font-size: 16px;
-  margin-bottom: 40px;
 }
 
 .service-box {
