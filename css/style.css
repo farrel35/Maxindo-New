@@ -325,6 +325,7 @@ marquee {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 20px;
 }
 .counter-box h2 span {
   font-size: 36px;
