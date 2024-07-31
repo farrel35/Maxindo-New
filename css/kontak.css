@@ -1,6 +1,9 @@
 /* Contact Hero Section */
 .contact-hero {
-  background: #f8f9fa; /* Light background for the hero section */
+  background-image: url("../img/bg-kontak.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 40px 0;
   text-align: center;
 }
@@ -19,50 +22,70 @@
 }
 
 /* Contact Info Section */
+/* Contact Info Section */
 .contact-info {
   padding: 40px 0;
 }
 
 .contact-item {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   padding: 15px;
   background: #fff;
   border-radius: 8px;
-
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
 
-.contact-item i {
-  font-size: 1.5rem;
-  color: #007bff;
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  background: #ed2025;
+  color: #fff;
+  border-radius: 50%;
   margin-right: 15px;
 }
 
-.contact-item p {
+.contact-icon i {
+  font-size: 2rem;
+}
+
+.contact-content {
+  flex: 1;
+}
+
+.contact-content h3 {
+  font-size: 1.25rem;
+  color: #333;
+  margin: 0 0 10px;
+}
+
+.contact-content p {
   font-size: 1rem;
   margin: 0;
 }
 
-.contact-item a {
-  color: #007bff;
+.contact-content a {
+  color: #ed2025;
   text-decoration: none;
   font-weight: 500;
 }
 
-.contact-item a:hover {
+.contact-content a:hover {
   text-decoration: underline;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .contact-item {
-    flex-direction: column;
     align-items: flex-start;
     text-align: left;
   }
 
-  .contact-item i {
+  .contact-icon {
     margin-bottom: 10px;
   }
 }
