@@ -279,3 +279,106 @@
     left: -10px;
   }
 }
+/* Maxindo Acronym Section */
+.maxindo-acronym {
+  background-color: #f8f9fa;
+  padding: 60px 0;
+}
+
+.maxindo-acronym .section-title {
+  margin-bottom: 40px;
+}
+
+.maxindo-acronym .acronym-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px; /* Jarak antara card */
+}
+
+.maxindo-acronym .card {
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(14% - 40px); /* Mengatur lebar card */
+  max-width: calc(14% - 40px); /* Maksimal lebar card */
+  color: white;
+}
+
+.maxindo-acronym .card h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.maxindo-acronym .card p {
+  font-size: 1rem; /* Ukuran teks deskripsi */
+}
+
+/* Card Colors */
+.maxindo-acronym .card:nth-child(1) {
+  background-color: #ff6f61; /* Warna untuk card M */
+}
+
+.maxindo-acronym .card:nth-child(2) {
+  background-color: #6b5b95; /* Warna untuk card A */
+}
+
+.maxindo-acronym .card:nth-child(3) {
+  background-color: #88b04b; /* Warna untuk card X */
+}
+
+.maxindo-acronym .card:nth-child(4) {
+  background-color: #f7cac9; /* Warna untuk card I */
+}
+
+.maxindo-acronym .card:nth-child(5) {
+  background-color: #92a8d1; /* Warna untuk card N */
+}
+
+.maxindo-acronym .card:nth-child(6) {
+  background-color: #955251; /* Warna untuk card D */
+}
+
+.maxindo-acronym .card:nth-child(7) {
+  background-color: #b565a7; /* Warna untuk card O */
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .maxindo-acronym .card {
+    flex: 1 1 calc(20% - 40px);
+    max-width: calc(20% - 40px);
+  }
+}
+
+@media (max-width: 992px) {
+  .maxindo-acronym .card {
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: calc(33.33% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .maxindo-acronym .card {
+    flex: 1 1 calc(50% - 40px);
+    max-width: calc(50% - 40px);
+  }
+}
+
+@media (max-width: 576px) {
+  .maxindo-acronym .card {
+    flex: 1 1 calc(100% - 40px);
+    max-width: calc(100% - 40px);
+  }
+
+  .maxindo-acronym .card h2 {
+    font-size: 2rem;
+  }
+
+  .maxindo-acronym .card p {
+    font-size: 0.9rem; /* Ukuran teks deskripsi lebih kecil pada perangkat kecil */
+  }
+}
