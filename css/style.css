@@ -557,11 +557,90 @@ h2 {
 }
 
 .service-content ul li span {
-  margin-left: 5px; /* Adjust this value to suit your design */
+  margin-left: 5px;
+
+  @media (max-width: 768px) {
+    .service-box {
+      max-width: 100%;
+    }
+  }
+}
+/*=======================
+ event css 
+=========================*/
+
+.events-section {
+  padding: 60px 0;
+  background-color: #f1f5f9; /* Soft background color for better contrast */
 }
 
-@media (max-width: 768px) {
-  .service-box {
-    max-width: 100%;
-  }
+.events-section h2 {
+  font-size: 2.5rem;
+  color: #212529;
+  margin-bottom: 20px;
+}
+
+.btn-primary {
+  background-color: #ed2025; /* Bootstrap primary color */
+  border: none;
+  color: #fff;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  border-radius: 25px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #670002; /* Darker shade for hover effect */
+}
+
+.card {
+  border: none;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.card-img-top {
+  width: 100%;
+  height: 200px; /* Fixed height for consistency */
+  object-fit: cover;
+}
+
+.card-body {
+  text-align: center; /* Center-align text */
+  padding: 20px;
+  background-color: #fff; /* Background color for card body */
+}
+
+.card-date {
+  font-size: 1rem;
+  color: #6c757d;
+  margin-bottom: 10px;
+}
+
+.card-title {
+  font-size: 1.25rem;
+  color: #212529;
+  margin-bottom: 15px;
+}
+
+.read-more {
+  display: inline-block;
+  font-size: 1rem;
+  color: #ed2025;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.read-more:hover {
+  color: #6a0002; /* Darker shade for hover effect */
 }
