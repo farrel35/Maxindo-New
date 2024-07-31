@@ -580,7 +580,7 @@ h2 {
   margin-bottom: 20px;
 }
 
-.btn-primary {
+.btn-custom {
   background-color: #ed2025; /* Bootstrap primary color */
   border: none;
   color: #fff;
@@ -591,8 +591,9 @@ h2 {
   transition: background-color 0.3s ease;
 }
 
-.btn-primary:hover {
-  background-color: #670002; /* Darker shade for hover effect */
+.btn-custom:hover {
+  border: 2px solid #ed2025;
+  color: #ed2025;
 }
 
 .card {
@@ -642,5 +643,60 @@ h2 {
 }
 
 .read-more:hover {
-  color: #6a0002; /* Darker shade for hover effect */
+  color: #6a0002;
+}
+/*=======================
+ quote css 
+=========================*/
+/* quote */
+#quote {
+  background-position: 50% 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  height: 300px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  background-image: url("../img/bg-quote.png");
+  z-index: 1;
+  display: block;
+  position: relative;
+  padding: 100px;
+  text-align: center;
+}
+
+blockquote {
+  font-size: 24px;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0 20px;
+  color: #fef1f1;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.icon-left,
+.icon-right {
+  color: #0000f1; /* Warna highlight */
+}
+
+.quote-author {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #f69685; /* Warna highlight */
+}
+
+.owl-carousel .owl-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.parallax-section-6 {
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  color: #fff;
 }

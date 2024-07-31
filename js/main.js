@@ -54,3 +54,20 @@ $(document).ready(function () {
   });
 });
 AOS.init();
+/*====================================
+          quote
+      ======================================*/
+$(document).ready(function () {
+  $("#quote-slider").owlCarousel({
+    items: 1,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    animateOut: "fadeOut",
+    animateIn: "fadeIn",
+    smartSpeed: 450,
+  });
+
+  new WOW().init();
+});
