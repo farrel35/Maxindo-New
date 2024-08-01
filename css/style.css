@@ -374,9 +374,9 @@ marquee {
   font-size: 18px;
 }
 /*===================
-	Why choose CSS
+	About CSS
 =====================*/
-.why-choose .choose-left h3 {
+.about .about-left h3 {
   font-size: 24px;
   font-weight: 600;
   color: #2c2d3f;
@@ -384,7 +384,7 @@ marquee {
   padding-bottom: 20px;
   margin-bottom: 24px;
 }
-.why-choose .choose-left h3:before {
+.about .about-left h3:before {
   position: absolute;
   content: "";
   left: 0;
@@ -393,19 +393,19 @@ marquee {
   width: 50px;
   background: #ed2025;
 }
-.why-choose .choose-left p {
+.about .about-left p {
   margin-bottom: 35px;
 }
-.why-choose .choose-left .list {
+.about .about-left .list {
 }
-.why-choose .choose-left .list li {
+.about .about-left .list li {
   color: #868686;
   margin-bottom: 12px;
 }
-.why-choose .choose-left .list li:last-child {
+.about .about-left .list li:last-child {
   margin-bottom: 0px;
 }
-.why-choose .choose-left .list li i {
+.about .about-left .list li i {
   height: 15px;
   width: 15px;
   line-height: 15px;
@@ -418,12 +418,12 @@ marquee {
   margin-right: 16px;
 }
 /* Start Faq CSS */
-.why-choose {
+.about {
   background-image: url("../img/bg1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.why-choose .choose-right {
+.about .about-right {
   height: 100%;
   width: 100%;
   background-image: url("../img/1.jpg");
@@ -432,7 +432,7 @@ marquee {
   background-repeat: no-repeat;
   position: relative;
 }
-.why-choose .choose-right .video {
+.about .about-right .video {
   color: #fff;
   height: 70px;
   width: 70px;
@@ -448,10 +448,10 @@ marquee {
   background: #ed2025;
   padding-left: 4px;
 }
-.why-choose .choose-right .video:hover {
+.about .about-right .video:hover {
   transform: scale(1.1);
 }
-.why-choose .video-image .waves-block .waves {
+.about .video-image .waves-block .waves {
   position: absolute;
   width: 200px;
   height: 200px;
@@ -466,26 +466,26 @@ marquee {
   top: 50%;
   margin-top: -100px;
 }
-.why-choose .video-image .waves-block .wave-1 {
+.about .video-image .waves-block .wave-1 {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-.why-choose .video-image .waves-block .wave-2 {
+.about .video-image .waves-block .wave-2 {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-.why-choose .video-image .waves-block .wave-3 {
+.about .video-image .waves-block .wave-3 {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-.why-teks {
+.about-teks {
   text-align: justify;
   text-indent: 30px;
   line-height: 1.6;
   color: #1c1c1c;
 }
 /*=======================
-	End Why choose CSS
+	End About choose CSS
 =========================*/
 
 /* Video Animations */
