@@ -169,7 +169,7 @@ img {
   color: #333; /* Warna teks judul */
   margin-bottom: 20px; /* Jarak bawah judul */
 }
-
+/* 
 marquee {
   width: 100%;
   overflow: hidden;
@@ -200,9 +200,49 @@ marquee {
   }
   100% {
     transform: translateX(-100%);
-  }
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+}
+} */
+
+.marquee-container {
+  overflow: hidden;
+  display: flex;
+  padding: 20px 0;
 }
 
+.marquee {
+  display: flex;
+  flex-shrink: 0;
+  gap: 3rem;
+  animation: infinite-scroll 25s linear infinite;
+  -webkit-animation: infinite-scroll 25s linear infinite;
+}
+
+.marquee img {
+  height: 80px;
+  width: auto;
+  margin: 0 20px;
+}
+
+@keyframes infinite-scroll {
+  from {
+    transform: translateX(0);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
+    -o-transform: translateX(-100%);
+  }
+}
 /*=============================
 	Start Feautes CSS
 ===============================*/

@@ -71,3 +71,7 @@ $(document).ready(function () {
 
   new WOW().init();
 });
+
+const logo = document.querySelector(".marquee").cloneNode(true);
+
+document.querySelector(".marquee-container").appendChild(logo);
