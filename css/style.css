@@ -608,27 +608,54 @@ h2 {
 /*===================
 	why CSS
 =====================*/
+/* Why Choose Us Section */
 .why-choose {
   padding: 60px 0;
 }
+
 .why-choose .image-column img {
   width: 100%;
   height: auto;
   border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
 }
+
+.why-choose .image-column img:hover {
+  transform: scale(1.01);
+}
+
 .why-choose .card {
   border: none;
   border-radius: 10px;
-  transition: all 0.3s ease-in-out;
+  height: 100%;
 }
-.why-choose .card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ed2025;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 40px;
 }
 .why-choose .card i {
   font-size: 2rem;
   color: #ed2025;
 }
-s
+
+.why-choose .card-title {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.why-choose .card-text {
+  font-size: 1rem;
+  color: #140f0f;
+}
+
 /*=======================
  event css 
 =========================*/
