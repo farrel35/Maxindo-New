@@ -629,12 +629,12 @@ h2 {
   border-radius: 10px;
   height: 100%;
 }
-.section-title {
+/* .section-title {
   font-size: 2.5rem;
   font-weight: 700;
   color: #ed2025;
   margin-bottom: 10px;
-}
+} */
 
 .section-subtitle {
   font-size: 1.2rem;
@@ -786,7 +786,8 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #fff;
 }
@@ -890,7 +891,8 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
