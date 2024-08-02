@@ -788,9 +788,9 @@ blockquote {
 
 .faq-image {
   width: 100%;
-  max-width: 350px;
+  max-width: 400px;
   margin-top: 20px;
-  height: 350px;
+  height: 400px;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -801,8 +801,6 @@ blockquote {
 /* Accordion Section */
 .accordion-section {
   padding: 50px 0;
-  background-color: #f1f1f1;
-  border-top: 5px solid #ed2025;
 }
 
 .accordion-item {
