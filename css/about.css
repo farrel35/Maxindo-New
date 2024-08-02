@@ -319,31 +319,31 @@
 
 /* Card Colors */
 .maxindo-acronym .card:nth-child(1) {
-  background-color: #ff6f61; /* Warna untuk card M */
+  background-color: #3e3d42; /* Warna untuk card M */
 }
 
 .maxindo-acronym .card:nth-child(2) {
-  background-color: #6b5b95; /* Warna untuk card A */
+  background-color: #a93528; /* Warna untuk card A */
 }
 
 .maxindo-acronym .card:nth-child(3) {
-  background-color: #88b04b; /* Warna untuk card X */
+  background-color: #496300; /* Warna untuk card X */
 }
 
 .maxindo-acronym .card:nth-child(4) {
-  background-color: #f7cac9; /* Warna untuk card I */
+  background-color: #c99d00; /* Warna untuk card I */
 }
 
 .maxindo-acronym .card:nth-child(5) {
-  background-color: #92a8d1; /* Warna untuk card N */
+  background-color: #4e6bad; /* Warna untuk card N */
 }
 
 .maxindo-acronym .card:nth-child(6) {
-  background-color: #955251; /* Warna untuk card D */
+  background-color: #887e75; /* Warna untuk card D */
 }
 
 .maxindo-acronym .card:nth-child(7) {
-  background-color: #b565a7; /* Warna untuk card O */
+  background-color: #c57224; /* Warna untuk card O */
 }
 
 /* Responsive Design */
