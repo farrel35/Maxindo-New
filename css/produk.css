@@ -1,0 +1,59 @@
+/* Custom styles for heroes section */
+.hero-produk {
+  background-image: url("../img/cabang.jpg"); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.hero-produk h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: fadeInDown 1s ease;
+}
+
+.hero-produk p {
+  /* font-size: 1.2rem; */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
+  animation: fadeInUp 1s ease;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.produk {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0px 10px 0px;
+}
