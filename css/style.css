@@ -222,7 +222,7 @@ marquee {
 }
 
 .marquee img {
-  height: 80px;
+  height: 60px;
   width: auto;
   margin: 0 20px;
 }
@@ -786,7 +786,8 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #fff;
 }
@@ -890,7 +891,8 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
