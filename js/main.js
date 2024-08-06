@@ -72,6 +72,9 @@ $(document).ready(function () {
   new WOW().init();
 });
 
-const logo = document.querySelector(".marquee").cloneNode(true);
+const marqueeContainers = document.querySelectorAll(".marquee-container");
 
-document.querySelector(".marquee-container").appendChild(logo);
+marqueeContainers.forEach((container) => {
+  const logo = container.querySelector(".marquee").cloneNode(true);
+  container.appendChild(logo);
+});
