@@ -41,7 +41,7 @@ $(document).ready(function () {
         countNum: countTo,
       },
       {
-        duration: 2000,
+        duration: 5000,
         easing: "linear",
         step: function () {
           $this.text(Math.floor(this.countNum)).append("<span>+</span>");
