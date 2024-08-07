@@ -11,8 +11,8 @@
     />
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
-    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -28,6 +28,8 @@
     />
 
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
   </head>
   <body>
     <!-- header Section -->
@@ -656,45 +658,52 @@
       </div>
     </section>
 
-    <!-- event Section -->
-    <section class="events-section">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 col-12 d-flex align-items-center">
-            <h2>Event Kami</h2>
+    <!-- Event Section -->
+    <section class="events slider">
+      <div class="event" data-aos="fade-left">
+        <img src="./img/event1.jpeg" alt="Event 1" />
+
+        <div class="event-info">
+          <div class="event-date">
+            <span class="event-date-text">10 Agustus 2024</span>
           </div>
+          <h2 class="event-title">Peluncuran Produk Baru</h2>
         </div>
-        <div class="row mt-4">
-          <!-- Card 1 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <img src="./img/event1.jpeg" class="card-img-top" alt="Event 1" />
-              <div class="card-body">
-                <p class="card-date">2024-08-15</p>
-                <h5 class="card-title">Event Title 1</h5>
-              </div>
-            </div>
+      </div>
+      <div class="event" data-aos="fade-left">
+        <img src="./img/event2.jpg" alt="Event 2" />
+        <div class="event-info">
+          <div class="event-date">
+            <span class="event-date-text">15 Agustus 2024</span>
           </div>
-          <!-- Card 2 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <img src="./img/event2.jpg" class="card-img-top" alt="Event 2" />
-              <div class="card-body">
-                <p class="card-date">2024-09-10</p>
-                <h5 class="card-title">Event Title 2</h5>
-              </div>
-            </div>
+          <h2 class="event-title">Diskon Spesial Musim Panas</h2>
+        </div>
+      </div>
+      <div class="event" data-aos="fade-left">
+        <img src="./img/event3.jpg" alt="Event 3" />
+        <div class="event-info">
+          <div class="event-date">
+            <span class="event-date-text">20 Agustus 2024</span>
           </div>
-          <!-- Card 3 -->
-          <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card">
-              <img src="./img/event3.jpg" class="card-img-top" alt="Event 3" />
-              <div class="card-body">
-                <p class="card-date">2024-10-05</p>
-                <h5 class="card-title">Event Title 3</h5>
-              </div>
-            </div>
+          <h2 class="event-title">Workshop Fashion Terbaru</h2>
+        </div>
+      </div>
+      <div class="event" data-aos="fade-left">
+        <img src="./img/event1.jpeg" alt="Event 4" />
+        <div class="event-info">
+          <div class="event-date">
+            <span class="event-date-text">25 Agustus 2024</span>
           </div>
+          <h2 class="event-title">Festival Fashion Musim Panas</h2>
+        </div>
+      </div>
+      <div class="event" data-aos="fade-left">
+        <img src="./img/event2.jpg" alt="Event 5" />
+        <div class="event-info">
+          <div class="event-date">
+            <span class="event-date-text">30 Agustus 2024</span>
+          </div>
+          <h2 class="event-title">Lelang Barang Fashion</h2>
         </div>
       </div>
     </section>
@@ -941,7 +950,9 @@
     <script src="js/main.js"></script>
     <!-- WOW.js untuk menginisialisasi Animate.css -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
   </body>
 </html>
