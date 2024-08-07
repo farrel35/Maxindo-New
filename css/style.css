@@ -610,7 +610,7 @@ h2 {
 =====================*/
 /* Why Choose Us Section */
 .why-choose {
-  padding: 60px 0;
+  padding: 50px 30px 50px 30px;
 }
 
 .why-choose .image-column img {
@@ -786,8 +786,7 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center
-    fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -796,7 +795,7 @@ blockquote {
 =========================*/
 /* FAQ Section */
 .faq-section {
-  padding: 50px 0;
+  padding: 50px 15px 50px 15px;
   background-color: #f9f9f9;
 }
 
@@ -891,8 +890,7 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
-    font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
