@@ -659,83 +659,109 @@ h2 {
 /*=======================
  event css 
 =========================*/
-
-.events-section {
-  padding: 60px 0;
-  background-color: #f1f5f9; /* Soft background color for better contrast */
+.events {
+  width: 80%;
+  margin: 0 auto;
 }
 
-.events-section h2 {
-  font-size: 2.5rem;
-  color: #212529;
-  margin-bottom: 20px;
-}
-
-.btn-custom {
-  background-color: #ed2025; /* Bootstrap primary color */
-  border: none;
-  color: #fff;
-  padding: 10px 20px;
-  text-transform: uppercase;
-  border-radius: 25px;
-  font-weight: bold;
-  transition: background-color 0.3s ease;
-}
-
-.btn-custom:hover {
-  border: 2px solid #ed2025;
-  color: #ed2025;
-}
-
-.card {
-  border: none;
-  border-radius: 12px;
+.event {
+  border: 1px solid #ddd;
+  border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s;
+  margin-bottom: 20px; /* Jarak antar card */
 }
 
-.card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
-}
-
-.card-img-top {
+.event img {
   width: 100%;
-  height: 200px; /* Fixed height for consistency */
-  object-fit: cover;
+  height: 200px; /* Tinggi tetap untuk gambar agar konsisten */
+  object-fit: cover; /* Memastikan gambar mengisi area card tanpa merusak proporsi */
 }
 
-.card-body {
-  text-align: center; /* Center-align text */
-  padding: 20px;
-  background-color: #fff; /* Background color for card body */
+.event-info {
+  padding: 15px;
+  text-align: center;
+  background: #ed2025; /* Background warna merah */
+  color: #fff;
 }
 
-.card-date {
-  font-size: 1rem;
-  color: #6c757d;
+.event-date {
   margin-bottom: 10px;
 }
 
-.card-title {
-  font-size: 1.25rem;
-  color: #212529;
-  margin-bottom: 15px;
-}
-
-.read-more {
-  display: inline-block;
+.event-date-text {
   font-size: 1rem;
-  color: #ed2025;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  display: block;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
 }
 
-.read-more:hover {
-  color: #6a0002;
+.event-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0;
 }
+
+/* Slick Slider */
+.slick-prev,
+.slick-next {
+  display: none !important; /* Sembunyikan tombol previous dan next */
+}
+
+.slick-dots {
+  text-align: center;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots li button {
+  font-size: 0;
+  line-height: 0;
+  display: inline-block;
+  width: 20px; /* Sesuaikan ukuran dot */
+  height: 20px; /* Sesuaikan ukuran dot */
+  padding: 5px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background: #ccc; /* Warna dot */
+}
+
+.slick-dots li.slick-active button {
+  background: #ed2025;
+}
+.slick-dots li.slick-active button:before {
+  opacity: 0;
+}
+/* Responsive grid for larger screens */
+@media (min-width: 1024px) {
+  .events {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; /* Jarak antar card dalam grid */
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .events {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Jarak antar card dalam grid */
+    padding: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .events {
+    display: block;
+  }
+}
+
 /*=======================
  quote css 
 =========================*/
