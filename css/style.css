@@ -157,7 +157,7 @@ img {
 ===============================*/
 /* Gaya untuk section media partner */
 .media-partner {
-  background-color: #fefefe; /* Latar belakang section */
+  background-color: #ffffff; /* Latar belakang section */
   padding: 20px 0; /* Padding atas dan bawah */
   text-align: center; /* Menyelaraskan teks ke tengah */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Bayangan untuk section */
@@ -662,7 +662,7 @@ h2 {
 }
 
 .why-choose .card-text {
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: #140f0f;
 }
 
