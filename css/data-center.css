@@ -1,0 +1,256 @@
+.vps {
+  background-color: #f9f9f9;
+  padding: 5rem 0;
+}
+
+.vps .section-title {
+  margin-bottom: 2rem;
+}
+
+.vps .section-title h2.highlight {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ed2025;
+}
+
+.vps .section-title p {
+  font-size: 1.15rem;
+  color: #555;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+.vps-card {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  height: 100%;
+}
+
+.vps-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.vps-card-icon {
+  font-size: 3rem;
+  color: #ed2025;
+  margin-bottom: 1rem;
+}
+
+.vps-card h4 {
+  font-size: 1.75rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.vps-card-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.vps-card-list li {
+  margin-bottom: 0.75rem;
+}
+
+.vps-card-list li strong {
+  color: #ed2025;
+}
+.vps-ket {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ed2025;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #ed2025;
+  padding-bottom: 0.5rem;
+}
+@media (min-width: 576px) {
+  .vps-card {
+    padding: 2.5rem;
+  }
+
+  .vps-card h4 {
+    font-size: 1.875rem;
+  }
+
+  .vps-card-list {
+    font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 992px) {
+  .vps-card {
+    padding: 3rem;
+  }
+
+  .vps-card h4 {
+    font-size: 2rem;
+  }
+
+  .vps-card-list {
+    font-size: 1.125rem;
+  }
+}
+
+.dedicated {
+  background-color: #f0f4f8;
+  padding: 5rem 0;
+}
+
+.dedicated .section-title {
+  margin-bottom: 3rem;
+}
+.judul-dedicated {
+  color: #302e2e;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.dedicated .highlight {
+  color: #ed2025;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.dedicated-content {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 2.5rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.dedicated-content:hover {
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+}
+
+.dedicated-description {
+  font-size: 1.15rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.dedicated-features {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dedicated-features li {
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.dedicated-features li::before {
+  content: "\f00c"; /* Unicode for checkmark icon from Font Awesome */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #ed2025;
+  margin-right: 10px;
+}
+
+.dedicated-features strong {
+  color: #ed2025;
+}
+
+.dedicated-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dedicated-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dedicated-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Custom styles for hosting section */
+.hosting {
+  padding: 5rem 0;
+  background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.hosting .section-title {
+  margin-bottom: 3rem;
+}
+
+.hosting .highlight {
+  color: #ed2025;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.hosting-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.hosting-content h4 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #333; /* Darker text for headings */
+  position: relative;
+}
+
+.hosting-content h4::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #ed2025; /* Underline color */
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+}
+
+.hosting-content p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.hosting-image-container {
+  text-align: right;
+}
+
+.hosting-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px; /* Rounded corners for the image */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.hosting-image:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Darker shadow on hover */
+}
+
+/* Ensure proper spacing and alignment */
+.hosting .row {
+  margin-bottom: 2rem;
+}

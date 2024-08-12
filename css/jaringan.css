@@ -1,0 +1,76 @@
+/* .produk-jaringan-2 Styles */
+.produk-jaringan-2 .card-text {
+  font-size: 1rem;
+  color: #333;
+}
+
+.produk-jaringan-2 .section-title h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ed2025;
+  font-weight: bold;
+}
+
+/* .wifi Section Styles */
+.wifi .section-title h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ed2025;
+  font-weight: bold;
+}
+
+.wifi-content {
+  margin-top: 1.5rem;
+}
+
+.wifi-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+/* .server Section Styles */
+.server .section-title h2 {
+  font-size: 2rem;
+  text-align: center;
+  color: #ed2025;
+  font-weight: bold;
+}
+
+.server-content {
+  margin-top: 1.5rem;
+}
+
+.server-text {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.server-list {
+  margin-top: 1.5rem;
+}
+
+.server-list li {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.8;
+}
+.server-list li::marker {
+  color: #ed2025;
+}
+
+.server-list strong {
+  font-weight: bold;
+  color: #ed2025;
+}
+.produk-jaringan .card-price,
+.produk-jaringan-2 .card-price {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #ed2025;
+  margin-bottom: 1rem;
+}
