@@ -1,3 +1,33 @@
+/* Custom styles for hero-about section */
+.hero-produk-jaringan {
+  background-image: url("../img/hero-jarinngan.png");
+  background-size: cover;
+  background-position: center;
+  color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-produk-jaringan h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: fadeInDown 1.5s ease;
+}
+
+.hero-produk-jaringan p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
+  animation: fadeInUp 1.5s ease;
+}
+
 /* .produk-jaringan-2 Styles */
 .produk-jaringan-2 .card-text {
   font-size: 1rem;
