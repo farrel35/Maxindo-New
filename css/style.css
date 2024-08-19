@@ -90,32 +90,38 @@ img {
   letter-spacing: 0.5px;
   transition: color 0.3s ease, background-color 0.3s ease, transform 0.3s ease;
   border-radius: 4px;
+  margin-right: 15px;
 }
 
 /* Underline effect for hover and active state */
 .navbar-nav .nav-link::before {
-  content: "";
   position: absolute;
+  content: "";
   left: 0;
   bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #ed2025;
-  transform: scaleX(0);
-  transform-origin: bottom right;
-  transition: transform 0.3s ease;
+  height: 3px;
+  width: 0%;
+  background: #ed2025;
+  border-radius: 5px 5px 0 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  transition: all 0.4s ease;
 }
 
 /* Active state underline */
 .nav-link.active::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
 }
 
 /* Hover effect triggers underline animation */
 .navbar-nav .nav-link:hover::before {
-  transform: scaleX(1);
-  transform-origin: bottom left;
+  opacity: 1;
+  width: 100%;
+  visibility: visible;
 }
 
 .navbar-nav .nav-link:hover {
@@ -181,14 +187,21 @@ img {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -319,6 +332,7 @@ img {
   background-color: #ed2025;
   color: white;
   padding: 40px 0;
+  margin-top: 50px;
 }
 .counter-box {
   text-align: center;
@@ -793,7 +807,8 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #fff;
 }
@@ -897,7 +912,8 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
