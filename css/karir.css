@@ -33,14 +33,14 @@
   background-color: #fff;
   border-radius: 10px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  height: 280px;
+  min-height: 290px;
   display: flex;
   flex-direction: column;
   justify-content: space-between; /* Membuat tombol berada di bawah */
   padding: 20px;
 }
 
-.job-card .btn-custom-outline {
+.job-card .btn-custom-outline-1 {
   background-color: transparent;
   border: 2px solid #ed2025; /* Menggunakan warna tema Maxindo */
   color: #ed2025;
@@ -48,9 +48,28 @@
   transition: background-color 0.3s ease, color 0.3s ease;
   align-self: flex-start; /* Menjaga tombol agar tetap di kiri */
   margin-top: auto; /* Menjaga tombol berada di bagian bawah */
+  padding: 10px 20px; /* Ukuran default */
 }
 
-.job-card .btn-custom-outline:hover {
+/* Hover effect */
+.job-card .btn-custom-outline-1:hover {
   background-color: #ed2025;
   color: #fff;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .job-card .btn-custom-outline-1 {
+    padding: 8px 16px; /* Kurangi padding untuk layar sedang */
+    font-size: 14px; /* Kurangi ukuran font */
+  }
+}
+
+@media (max-width: 576px) {
+  .job-card .btn-custom-outline-1 {
+    padding: 6px 12px; /* Kurangi lagi padding untuk layar kecil */
+    font-size: 12px; /* Kurangi lagi ukuran font */
+    width: 100%; /* Buat tombol memenuhi lebar kontainer pada layar kecil */
+    text-align: center; /* Pusatkan teks */
+  }
 }
