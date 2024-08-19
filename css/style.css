@@ -169,80 +169,57 @@ img {
   color: #333; /* Warna teks judul */
   margin-bottom: 20px; /* Jarak bawah judul */
 }
-/* 
-marquee {
-  width: 100%;
-  overflow: hidden;
-  background-color: #fefefe;
-  padding: 20px 0;
-  position: relative;
-}
 
-.marquee-content {
+.scroller__inner {
+  height: 100px;
+  /* padding-block: 1rem; */
+  padding: 1rem;
   display: flex;
-  white-space: nowrap;
-}
-
-.marquee-content img {
-  height: 80px;
-  width: 90%;
-  margin: 0 40px;
-  transition: transform 0.3s;
-}
-
-.marquee-content img:hover {
-  transform: scale(1.1);
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
-}
-} */
-
-.marquee-container {
-  overflow: hidden;
-  display: flex;
-  padding: 20px 0;
-}
-
-.marquee {
-  display: flex;
-  flex-shrink: 0;
+  flex-wrap: wrap;
   gap: 3rem;
-  animation: infinite-scroll 25s linear infinite;
-  -webkit-animation: infinite-scroll 25s linear infinite;
 }
 
-.marquee img {
-  height: 60px;
-  width: auto;
-  margin: 0 20px;
+.scroller[data-animated="true"] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
-@keyframes infinite-scroll {
-  from {
-    transform: translateX(0);
-    -webkit-transform: translateX(0);
-    -moz-transform: translateX(0);
-    -ms-transform: translateX(0);
-    -o-transform: translateX(0);
-  }
+.scroller[data-animated="true"] .scroller__inner {
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction="right"] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-direction="left"] {
+  --_animation-direction: forwards;
+}
+
+.scroller[data-speed="fast"] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed="slow"] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
   to {
-    transform: translateX(-100%);
-    -webkit-transform: translateX(-100%);
-    -moz-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    -o-transform: translateX(-100%);
+    transform: translate(calc(-50% - 0.5rem));
   }
 }
+
 /*=============================
 	Start Feautes CSS
 ===============================*/
@@ -822,7 +799,8 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #fff;
 }
@@ -926,7 +904,8 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
