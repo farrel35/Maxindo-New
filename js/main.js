@@ -131,3 +131,10 @@ function addAnimation() {
     });
   });
 }
+$(document).ready(function () {
+  $.scrollUp({
+    scrollText: '<span><i class="fa fa-angle-up"></i></span>',
+    scrollSpeed: 300,
+    animation: "fade",
+  });
+});
