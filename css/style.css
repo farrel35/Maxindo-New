@@ -677,6 +677,7 @@ h2 {
   text-align: center;
   background: #ed2025; /* Background warna merah */
   color: #fff;
+  height: 125px;
 }
 
 .event-date {
