@@ -1,0 +1,88 @@
+/* Custom styles for hero-about section */
+.hero-consultan {
+  background-image: url("../img/hero-jarinngan.png");
+  background-size: cover;
+  background-position: center;
+  color: rgb(245, 245, 245);
+  text-align: center;
+  padding: 100px 0;
+  position: relative;
+  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.hero-consultan h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  text-transform: uppercase;
+  font-weight: 700;
+  animation: fadeInDown 1.5s ease;
+}
+
+.hero-consultan p {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-style: italic;
+  animation: fadeInUp 1.5s ease;
+}
+
+/* Set a fixed height for uniformity */
+.consultant-service {
+  padding: 60px 0;
+  background-color: #f8f9fa;
+}
+
+.consultant-service .card h4 {
+  background-color: #ed2025;
+  color: #fff;
+  padding: 20px;
+  margin: 0;
+  font-size: 22px;
+  font-weight: bold;
+  text-transform: uppercase;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.consultant-service .card {
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.consultant-service .card:hover {
+  transform: translateY(-10px);
+}
+
+.consultant-service .card-body {
+  padding: 30px;
+  background-color: #fff;
+}
+
+.consultant-service ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.consultant-service ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+.consultant-service ul li i {
+  color: #ed2025;
+  margin-right: 10px;
+}
