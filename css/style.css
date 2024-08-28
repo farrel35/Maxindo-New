@@ -66,9 +66,9 @@ img {
   background-color: transparent;
 }
 
-.carousel-item img {
+/* .carousel-item img {
   max-height: 580px;
-}
+} */
 .dropdown:hover .dropdown-menu {
   display: block;
 }
