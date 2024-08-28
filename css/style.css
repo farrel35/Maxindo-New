@@ -69,7 +69,7 @@ img {
 .carousel-item img {
   top: 50px;
   max-height: 500px;
-  object-fit: fill;
+  object-fit: cover;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
