@@ -67,11 +67,9 @@ img {
 }
 
 .carousel-item img {
-  top: 10px;
+  top: 50px;
   max-height: 500px;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
+  object-fit: fill;
 }
 .dropdown:hover .dropdown-menu {
   display: block;
@@ -187,14 +185,21 @@ img {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    white 20%,
+    white 80%,
+    transparent
+  );
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s)
+    var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -800,7 +805,8 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center
+    fixed;
   background-size: cover;
   color: #fff;
 }
@@ -905,7 +911,8 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
+    font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
