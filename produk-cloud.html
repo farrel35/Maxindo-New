@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/karir.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/internet.css" />
+    <link rel="stylesheet" href="css/produk.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -82,11 +81,11 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle active"
+                      class="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -108,7 +107,7 @@
 
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle active"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -189,7 +188,9 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./cabang.html">Cabang</a>
+                    <a class="nav-link" aria-current="page" href="/cabang.html"
+                      >Cabang</a
+                    >
                   </li>
                 </ul>
 
@@ -203,77 +204,84 @@
       </div>
     </header>
 
-    <section class="hero-about">
+    <section class="hero-internet">
       <div class="container">
-        <h1 class="text-center mb-5">Lowongan Kerja</h1>
+        <h1>Solusi Koneksi Terbaik untuk Bisnis Anda</h1>
         <p>
-          Pelajari lebih lanjut tentang komitmen kami dalam menyediakan solusi
-          teknologi terbaik untuk Anda.
+          Nikmati internet cepat dan handal dengan Maxindo, solusi tepat untuk
+          kebutuhan bisnis Anda. Kami memastikan jaringan lancar, sehingga Anda
+          dapat fokus pada pertumbuhan bisnis tanpa gangguan.
         </p>
       </div>
     </section>
 
-    <!-- Career Section -->
-    <section class="career-section py-5">
-      <div class="container">
-        <div class="row">
-          <!-- Job 1 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Software Engineer</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
-              <p>
-                Kami mencari Software Engineer yang berpengalaman untuk
-                bergabung dengan tim kami. Anda akan bertanggung jawab atas
-                pengembangan dan pemeliharaan aplikasi kami.
-              </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
-            </div>
-          </div>
-          <!-- Job 2 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Network Administrator</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
-              <p>
-                Kami membutuhkan Network Administrator yang handal untuk
-                mengelola jaringan dan infrastruktur TI perusahaan.
-              </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
-            </div>
+    <section class="produk">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-internet-con.html"
+                  >Internet Connectivity</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/produk-sdwan.html">SDWAN Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Cloud Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-networksec.html"
+                  >Network Security</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-wifi.html"
+                  >Managed Wifi Solution</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-comm.html"
+                  >Unified Comm Solution</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </section>
+
+    <section class="cloud-solution">
+      <div class="container">
+        <div class="section-title mt-3">
+          <h2>
+            <span>Cloud Solution</span>
+          </h2>
+        </div>
         <div class="row">
-          <!-- Job 3 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>UI/UX Designer</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+          <div class="col">
+            <div class="service">
+              <i class="fas fa-server"></i>
+              <h3>Dedicated Server</h3>
               <p>
-                Kami mencari seorang UI/UX Designer yang kreatif untuk membantu
-                kami menciptakan pengalaman pengguna yang luar biasa.
+                Pilihan ideal untuk bisnis yang memerlukan performa tinggi dan
+                keamanan maksimal. Server yang didedikasikan hanya untuk Anda,
+                memastikan keandalan dan kontrol penuh atas data dan aplikasi
+                Anda.
               </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
             </div>
           </div>
-          <!-- Job 4 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Marketing Specialist</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+          <div class="col">
+            <div class="service">
+              <i class="fas fa-cloud"></i>
+              <h3>VPS Hosting</h3>
               <p>
-                Bergabunglah dengan tim pemasaran kami sebagai Marketing
-                Specialist dan bantu kami meningkatkan brand awareness.
+                Solusi hosting fleksibel yang menawarkan performa optimal dengan
+                biaya lebih efisien. VPS Hosting memungkinkan Anda untuk
+                menjalankan aplikasi dengan resource yang dapat diatur sesuai
+                kebutuhan bisnis Anda.
               </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
             </div>
           </div>
         </div>
@@ -350,7 +358,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>

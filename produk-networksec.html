@@ -12,9 +12,9 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/karir.css" />
     <link rel="stylesheet" href="css/footer.css" />
-    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/software.css" />
+    <link rel="stylesheet" href="css/produk.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
     <link rel="stylesheet" href="css/magnific-popup.css" />
@@ -23,7 +23,6 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <header class="header">
@@ -82,11 +81,11 @@
               <div class="offcanvas-body">
                 <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                   <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
+                    <a class="nav-link" href="./index.html">Home</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle active"
+                      class="nav-link dropdown-toggle"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -108,7 +107,7 @@
 
                   <li class="nav-item dropdown">
                     <a
-                      class="nav-link dropdown-toggle"
+                      class="nav-link dropdown-toggle active"
                       href="#"
                       role="button"
                       data-bs-toggle="dropdown"
@@ -189,7 +188,9 @@
                     </ul>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="./cabang.html">Cabang</a>
+                    <a class="nav-link" aria-current="page" href="/cabang.html"
+                      >Cabang</a
+                    >
                   </li>
                 </ul>
 
@@ -203,77 +204,95 @@
       </div>
     </header>
 
-    <section class="hero-about">
+    <section class="hero-produk-network">
       <div class="container">
-        <h1 class="text-center mb-5">Lowongan Kerja</h1>
+        <h1>Solusi Koneksi Terbaik untuk Bisnis Anda</h1>
         <p>
-          Pelajari lebih lanjut tentang komitmen kami dalam menyediakan solusi
-          teknologi terbaik untuk Anda.
+          Nikmati internet cepat dan handal dengan Maxindo, solusi tepat untuk
+          kebutuhan bisnis Anda. Kami memastikan jaringan lancar, sehingga Anda
+          dapat fokus pada pertumbuhan bisnis tanpa gangguan.
         </p>
       </div>
     </section>
 
-    <!-- Career Section -->
-    <section class="career-section py-5">
-      <div class="container">
-        <div class="row">
-          <!-- Job 1 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Software Engineer</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
-              <p>
-                Kami mencari Software Engineer yang berpengalaman untuk
-                bergabung dengan tim kami. Anda akan bertanggung jawab atas
-                pengembangan dan pemeliharaan aplikasi kami.
-              </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
-            </div>
-          </div>
-          <!-- Job 2 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Network Administrator</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
-              <p>
-                Kami membutuhkan Network Administrator yang handal untuk
-                mengelola jaringan dan infrastruktur TI perusahaan.
-              </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
-            </div>
+    <section class="produk">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-internet-con.html"
+                  >Internet Connectivity</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/produk-sdwan.html">SDWAN Solution</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-cloud.html"
+                  >Cloud Solution</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Network Security</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-wifi.html"
+                  >Managed Wifi Solution</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./produk-comm.html"
+                  >Unified Comm Solution</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
+      </nav>
+    </section>
+
+    <section class="network-security">
+      <div class="container">
+        <div class="section-title mt-3">
+          <h2>
+            <span>Network Security</span>
+          </h2>
+        </div>
         <div class="row">
-          <!-- Job 3 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>UI/UX Designer</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+          <div class="col">
+            <div class="service">
+              <i class="fas fa-shield-alt"></i>
+              <h3>UTM (Unified Threat Management)</h3>
               <p>
-                Kami mencari seorang UI/UX Designer yang kreatif untuk membantu
-                kami menciptakan pengalaman pengguna yang luar biasa.
+                Solusi keamanan jaringan yang terintegrasi untuk melindungi
+                bisnis Anda dari berbagai ancaman siber. UTM memastikan keamanan
+                menyeluruh dengan fitur firewall, VPN, anti-virus, dan banyak
+                lagi dalam satu perangkat.
               </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
             </div>
           </div>
-          <!-- Job 4 -->
-          <div class="col-md-6">
-            <div class="job-card p-4 mb-4 border rounded shadow">
-              <h3>Marketing Specialist</h3>
-              <p><strong>Lokasi:</strong> Jakarta, Indonesia</p>
+          <div class="col">
+            <div class="service">
+              <i class="fas fa-fire"></i>
+              <h3>Firewall</h3>
               <p>
-                Bergabunglah dengan tim pemasaran kami sebagai Marketing
-                Specialist dan bantu kami meningkatkan brand awareness.
+                Pertahanan pertama dalam menjaga keamanan jaringan Anda.
+                Firewall mencegah akses tidak sah dan melindungi data penting
+                perusahaan Anda dari serangan siber yang berbahaya.
               </p>
-              <a href="job-detail.html" class="btn btn-custom-outline-1"
-                >Lihat Detail</a
-              >
+            </div>
+          </div>
+          <div class="col">
+            <div class="service">
+              <i class="fas fa-desktop"></i>
+              <h3>Endpoint Security</h3>
+              <p>
+                Perlindungan menyeluruh untuk perangkat endpoint seperti
+                komputer dan smartphone. Endpoint Security menjaga integritas
+                perangkat dan mencegah serangan malware yang dapat mengancam
+                operasional bisnis Anda.
+              </p>
             </div>
           </div>
         </div>
@@ -285,22 +304,19 @@
         <div class="row">
           <!-- Column 1: Company Logo and Tagline -->
           <div class="col-md-3 mb-4">
-            <img src="img/logo.png" alt="Company Logo" style="width: 180px" />
-            <h3>Maxindo Mitra Solusi</h3>
-            <p><i> Solution For Your Business</i></p>
+            <h5>Company Logo</h5>
+            <img src="img/logo.png" alt="Company Logo" style="width: 100px" />
+            <p>Company Name</p>
+            <p>Tagline goes here</p>
           </div>
           <!-- Column 2: Products -->
           <div class="col-md-3 mb-4">
             <h5>Products</h5>
             <ul class="list-unstyled">
-              <li>
-                <a href="./produk-internet-con.html">Internet Connectivity</a>
-              </li>
-              <li><a href="/produk-sdwan.html">SDWAN Solution</a></li>
-              <li><a href="./produk-cloud.html">Cloud Solution</a></li>
-              <li><a href="./produk-networksec.html">Network Security</a></li>
-              <li><a href="./produk-wifi.html">Managed Wifi Solution</a></li>
-              <li><a href="./produk-comm.html">Unified Comm Solution</a></li>
+              <li><a href="#">Product 1</a></li>
+              <li><a href="#">Product 2</a></li>
+              <li><a href="#">Product 3</a></li>
+              <li><a href="#">Product 4</a></li>
             </ul>
           </div>
           <!-- Column 3: Links -->
@@ -308,26 +324,26 @@
             <h5>Quick Links</h5>
             <ul class="list-unstyled">
               <li><a href="#">Home</a></li>
-              <li><a href="./about.html">About Us</a></li>
+              <li><a href="#">About Us</a></li>
               <li><a href="#">Services</a></li>
-              <li><a href="./kontak.html">Contact</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </div>
           <!-- Column 4: Contact Information -->
           <div class="col-md-3 contact-info">
             <h5>Contact Us</h5>
             <p>
-              <i class="fas fa-map-marker-alt"></i>Pantai Indah Kapuk RKC Blok H
-              No.77, Jakarta, 14470.
+              <i class="fas fa-map-marker-alt"></i>123 Street Name, City,
+              Country
             </p>
-            <p><i class="fas fa-phone-alt"></i>(021) 80624646</p>
+            <p><i class="fas fa-phone-alt"></i>+123 456 7890</p>
             <p><i class="fas fa-envelope"></i>info@company.com</p>
           </div>
         </div>
         <hr />
         <div class="row mt-3">
           <div class="col-md-12 text-center">
-            <p>&copy; 2024 PT Maxindo Mitra Solusi. All Rights Reserved.</p>
+            <p>&copy; 2024 Company Name. All Rights Reserved.</p>
             <div class="social-icons">
               <a href="https://www.facebook.com/maxindo.net.id/" target="_blank"
                 ><i class="fab fa-facebook-f"></i
@@ -350,7 +366,6 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
