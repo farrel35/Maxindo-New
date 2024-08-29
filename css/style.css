@@ -183,21 +183,14 @@ img {
 
 .scroller[data-animated="true"] {
   overflow: hidden;
-  -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    white 20%,
-    white 80%,
-    transparent
-  );
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
   mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 
 .scroller[data-animated="true"] .scroller__inner {
   width: max-content;
   flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s)
-    var(--_animation-direction, forwards) linear infinite;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
 }
 
 .scroller[data-direction="right"] {
@@ -803,8 +796,7 @@ blockquote {
 }
 
 .parallax-section-6 {
-  background: url("path-to-your-parallax-image.jpg") no-repeat center center
-    fixed;
+  background: url("path-to-your-parallax-image.jpg") no-repeat center center fixed;
   background-size: cover;
   color: #fff;
 }
@@ -909,8 +901,7 @@ blockquote {
   font-size: 1rem;
   float: right;
   margin-left: auto;
-  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease,
-    font-size 0.3s ease;
+  transition: content 0.3s ease, transform 0.3s ease, color 0.3s ease, font-size 0.3s ease;
 }
 
 .accordion-header button:not(.collapsed)::after {
@@ -1008,4 +999,63 @@ blockquote {
 }
 #scrollUp:hover {
   background: #2c2d3f;
+}
+/* Gaya umum untuk section sertifikat */
+.certificate-section {
+  background-color: #f9f9f9; /* Warna latar belakang */
+  padding: 20px 0; /* Jarak atas dan bawah */
+}
+
+.certificate-section .container {
+  max-width: 1200px; /* Lebar maksimal container */
+  margin: 0 auto; /* Mengatur margin otomatis di kiri dan kanan */
+}
+
+.certificate-section .section-title {
+  margin-bottom: 20px; /* Jarak bawah untuk judul section */
+}
+
+.certificate-section .section-title h2 {
+  font-size: 2rem; /* Ukuran font untuk judul */
+  color: #333; /* Warna teks judul */
+}
+
+.certificate-section .section-title .highlight {
+  color: #ed2025; /* Warna highlight */
+}
+
+.certificate-content {
+  display: flex; /* Menggunakan flexbox untuk tata letak dua kolom */
+  align-items: center; /* Vertikal alignment */
+  gap: 20px; /* Jarak antara kolom */
+}
+
+.certificate-image img {
+  max-width: 100%; /* Memastikan gambar tidak melebihi lebar kolom */
+  height: auto; /* Menjaga rasio aspek gambar */
+  border: 3px solid #ddd; /* Garis batas gambar */
+  border-radius: 8px; /* Sudut melengkung pada gambar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan lembut di sekitar gambar */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi untuk hover */
+}
+
+.certificate-image img:hover {
+  transform: scale(1.05); /* Memperbesar gambar saat hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Mengubah bayangan saat hover */
+}
+
+.certificate-description {
+  flex: 1; /* Menyusun deskripsi untuk mengambil sisa ruang yang tersedia */
+}
+
+.certificate-description h3 {
+  font-size: 1.5rem; /* Ukuran font untuk subjudul */
+  color: #333; /* Warna teks subjudul */
+  margin-bottom: 10px; /* Jarak bawah untuk subjudul */
+}
+
+.certificate-description p {
+  font-size: 1rem; /* Ukuran font untuk paragraf */
+  color: #666; /* Warna teks paragraf */
+  line-height: 1.6; /* Jarak antar baris */
 }
